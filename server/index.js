@@ -8,9 +8,6 @@ import routes from "./src/routes/index.js";
 
 const app = express();
 
-console.log("TMDB_BASE_URL:", process.env.TMDB_BASE_URL);
-console.log("TMDB_KEY:", process.env.TMDB_KEY);
-
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
